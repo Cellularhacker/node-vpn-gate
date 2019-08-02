@@ -2,10 +2,20 @@
   "maxerr": 25,
   "latedef": "nofunc",
   "browser": true,
-  "node": true, // for browserify require etc
-  "globals": ["$", "Prism", "describe", "it", "before", "after", "beforeEach", "afterEach"],
+  "node": true,
+  // for browserify require etc
+  "globals": [
+    "$",
+    "Prism",
+    "describe",
+    "it",
+    "before",
+    "after",
+    "beforeEach",
+    "afterEach"
+  ],
   "indent": 2,
-//  "camelcase": true,
+  //  "camelcase": true,
   "newcap": true,
   "undef": true,
   "multistr": true,
@@ -14,6 +24,7 @@
   "devel": true,
   "loopfunc": true,
   "-W004": true,
-  "-W078": true, // allow setter w/o getter
+  "-W078": true,
+  // allow setter w/o getter
   "-W087": true
 }

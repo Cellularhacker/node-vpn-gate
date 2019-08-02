@@ -1,11 +1,10 @@
 {
   "name": "vpn-gate",
-  "version": "2.1.2",
+  "version": "2.1.3",
   "description": "Connect via openvpn using free vpngate.net config data from the CLI",
   "main": "index.js",
   "scripts": {
-    "test": "mocha",
-    "dev-watch": "cd tools && webpack --progress --colors --watch"
+    "test": "node test/demo.js"
   },
   "keywords": [
     "vpn",
@@ -18,6 +17,10 @@
     "connect"
   ],
   "author": "Alexander Kazmin <ernium@gmail.com>",
+  "contributors": [
+    "Alexander Kazmin <ernium@gmail.com>",
+    "Cellularhacker <wva3cdae@gmail.com>"
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -26,13 +29,9 @@
   "dependencies": {
     "bluebird": "^3.3.4",
     "debug": "~2.2.0",
-    "express": "~4.13.4",
     "keypress": "~0.2.1",
     "log-update": "~1.0.2",
     "meow": "~3.7.0",
-    "react": "^0.14.6",
-    "react-dom": "^0.14.6",
-    "request": "^2.70.0",
     "socket.io": "~1.4.6",
     "socket.io-client": "~1.4.6",
     "tmp": "^0.0.28"
@@ -50,14 +49,8 @@
     "babel-preset-stage-0": "^6.3.13",
     "chai": "~3.5.0",
     "css-loader": "^0.12.0",
-    "extract-text-webpack-plugin": "^1.0.1",
-    "mocha": "~2.5.3",
-    "node-sass": "^2.1.1",
-    "sass-loader": "^0.5.0",
     "should": "~10.0.0",
-    "style-loader": "^0.12.2",
-    "webpack": "~1.13.1",
-    "webpack-dev-server": "~1.14.1"
+    "style-loader": "^0.12.2"
   },
   "bin": {
     "vpn-gate": "index.js"
