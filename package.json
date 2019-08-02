@@ -27,11 +27,13 @@
     "url": "ernium/node-vpn-gate"
   },
   "dependencies": {
+    "axios": "^0.19.0",
     "bluebird": "^3.3.4",
     "debug": "~2.2.0",
     "keypress": "~0.2.1",
     "log-update": "~1.0.2",
     "meow": "~3.7.0",
+    "request": "^2.88.0",
     "socket.io": "~1.4.6",
     "socket.io-client": "~1.4.6",
     "tmp": "^0.0.28"
